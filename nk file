@@ -1,0 +1,93 @@
+set cut_paste_input [stack 0]
+version 13.0 v10
+push 0
+Dot {
+name Dot27
+label "to bg"
+selected true
+xpos -1870
+ypos -5565
+}
+push $cut_paste_input
+Dot {
+name Dot26
+label "to bullet holes"
+selected true
+xpos -2092
+ypos -5530
+}
+set Na6662000 [stack 0]
+Dot {
+name Dot28
+selected true
+xpos -1982
+ypos -5530
+}
+set Na6663c00 [stack 0]
+Merge2 {
+inputs 2
+operation in
+name In2
+selected true
+xpos -1904
+ypos -5534
+}
+Blur {
+channels rgba
+size 100
+name Blur3
+selected true
+xpos -1904
+ypos -5489
+}
+Dot {
+name Dot8
+selected true
+xpos -1870
+ypos -5436
+}
+push $Na6663c00
+Blur {
+channels rgba
+size 100
+name Blur4
+selected true
+xpos -2016
+ypos -5489
+}
+Dot {
+name Dot32
+selected true
+xpos -1982
+ypos -5432
+}
+Merge2 {
+inputs 2
+operation divide
+name Merge18
+selected true
+xpos -1974
+ypos -5394
+}
+push $Na6662000
+Dot {
+name Dot29
+selected true
+xpos -2092
+ypos -5388
+}
+Merge2 {
+inputs 2
+operation multiply
+name Merge17
+selected true
+xpos -1974
+ypos -5341
+}
+Dot {
+name Dot33
+label "to  merge over bullet holes"
+selected true
+xpos -1940
+ypos -5285
+}
